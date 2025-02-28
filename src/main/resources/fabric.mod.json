@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "carrotato",
+	"version": "${version}",
+	"name": "carrotato",
+	"description": "carrotato",
+	"authors": [
+		"aroundforge"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/carrotato/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.aroundforge.carrotato.Carrotato"
+		],
+		"fabric-datagen": [
+			"net.aroundforge.carrotato.CarrotatoDataGenerator"
+		],
+		"client": [
+			"net.aroundforge.carrotato.CarrotatoClient"
+		]
+	},
+	"mixins": [
+		"carrotato.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
