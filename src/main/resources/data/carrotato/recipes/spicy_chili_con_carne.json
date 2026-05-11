@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:cooked_beef"
+    },
+    {
+      "item": "carrotato:chili"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "carrotato:spicy_chili_con_carne"
+  }
+}

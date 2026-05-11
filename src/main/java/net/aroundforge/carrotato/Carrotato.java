@@ -1,5 +1,8 @@
 package net.aroundforge.carrotato;
 
+import net.aroundforge.carrotato.registry.ModBlocks;
+import net.aroundforge.carrotato.registry.ModItems;
+import net.aroundforge.carrotato.world.gen.ModWorldGen;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,10 @@ public class Carrotato implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
+		ModEffects.registerModEffects();
 
+		ModWorldGen.generateModWorldGen();
 	}
 }

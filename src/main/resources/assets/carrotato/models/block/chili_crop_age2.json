@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "carrotato:block/chili_crop_age2"
+  }
+}

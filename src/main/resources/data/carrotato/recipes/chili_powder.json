@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "carrotato:dried_chili"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "carrotato:chili_powder"
+  }
+}

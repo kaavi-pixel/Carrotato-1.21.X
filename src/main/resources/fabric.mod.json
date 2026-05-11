@@ -2,14 +2,12 @@
 	"schemaVersion": 1,
 	"id": "carrotato",
 	"version": "${version}",
-	"name": "carrotato",
-	"description": "carrotato",
+	"name": "Carrotato",
+	"description": "A Fabric mod that adds chili to Minecraft.",
 	"authors": [
 		"aroundforge"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
 	"icon": "assets/carrotato/icon.png",
@@ -25,9 +23,6 @@
 			"net.aroundforge.carrotato.CarrotatoClient"
 		]
 	},
-	"mixins": [
-		"carrotato.mixins.json"
-	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.21",

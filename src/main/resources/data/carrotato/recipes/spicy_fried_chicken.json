@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "food",
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_chicken"
+    },
+    {
+      "item": "carrotato:chili_powder"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "item": "carrotato:spicy_fried_chicken"
+  }
+}
