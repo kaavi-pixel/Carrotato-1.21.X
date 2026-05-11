@@ -1,11 +1,12 @@
 package net.aroundforge.carrotato.registry;
 
 import net.aroundforge.carrotato.Carrotato;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.effect.StatusEffectInstance;
-import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.AliasedBlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -54,5 +55,21 @@ public class ModItems {
 
     public static void registerModItems() {
         Carrotato.LOGGER.info("Registering Mod Items for " + Carrotato.MOD_ID);
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
+            entries.add(CHILI);
+            entries.add(DRIED_CHILI);
+            entries.add(HOT_SAUCE);
+            entries.add(SPICY_CHILI_CON_CARNE);
+            entries.add(SPICY_FRIED_CHICKEN);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
+            entries.add(CHILI_SEEDS);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+            entries.add(CHILI_POWDER);
+        });
     }
 }
