@@ -14,9 +14,9 @@ public class Carrotato implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
 		ModEffects.registerModEffects();
+		ModBlocks.registerModBlocks();
+		ModItems.registerModItems();
 
 		ModWorldGen.generateModWorldGen();
 	}

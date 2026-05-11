@@ -1,5 +1,6 @@
 package net.aroundforge.carrotato.datagen;
 
+import net.aroundforge.carrotato.block.ChiliCropBlock;
 import net.aroundforge.carrotato.registry.ModBlocks;
 import net.aroundforge.carrotato.registry.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -15,7 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        // blockStateModelGenerator.registerCrop(ModBlocks.CHILI_CROP, ChiliCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
+        blockStateModelGenerator.registerCrop(ModBlocks.CHILI_CROP, ChiliCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6, 7);
     }
 
     @Override

@@ -9,7 +9,8 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
 public class ModEffects {
-    public static final RegistryEntry<StatusEffect> SPICY = registerStatusEffect("spicy", new SpicyStatusEffect());
+    public static final StatusEffect SPICY_EFFECT = new SpicyStatusEffect();
+    public static final RegistryEntry<StatusEffect> SPICY = registerStatusEffect("spicy", SPICY_EFFECT);
 
     private static RegistryEntry<StatusEffect> registerStatusEffect(String name, StatusEffect effect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(Carrotato.MOD_ID, name), effect);
